@@ -1,0 +1,11 @@
+<%= notice %>
+
+<%= simple_form_for @contact do |f| %>
+  <dl>
+    <dt><%= f.input :email, label: 'Preencha com o seu email:',
+      placeholder: 'meuemail@dominio.com' %></dt>
+    <dt><%= f.input :subject, label: 'Assunto:'%></dt>
+    <dt><%= f.input :body, label: 'Mensagem:'%></dt>
+    <dt><%= f.button :submit, 'Enviar' %></dt>
+  </dl>
+<% end %>
