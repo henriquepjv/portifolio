@@ -1,0 +1,131 @@
+$text-color: rgba(66, 66, 66, 0.87);
+$dark-text-color: #353635;
+$alternate-color: #a71622;
+$light-grey: lighten($text-color, 60%);
+
+body{
+  margin: 0;
+  padding:0;
+  padding-top: 100px;
+  font: normal 1.6em "Open Sans","Hevetica Neue","Helvetica",sans-serif;
+  line-height: 2em;
+  color: $text-color;
+  background-color: #F6F8F8;
+  overflow-x: hidden;
+  font-weight: 300;
+  -webkit-backface-visibility: hidden;
+
+}
+
+main {
+  min-height: 80vh;
+}
+::-moz-selection {
+  color: #fff;
+  text-shadow: none;
+  background: $alternate-color;
+}
+::-webkit-selection {
+  color: #fff;
+  text-shadow: none;
+  background: $alternate-color;
+}
+::selection {
+  color: #fff;
+  text-shadow: none;
+  background: $text-color;
+}
+
+p {
+  margin-bottom: 0.8em;
+  line-height: 1.8;
+  font-weight: normal;
+}
+
+a {
+  color: $alternate-color;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: $dark-text-color;
+  }
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  i {
+    color: $alternate-color;
+    vertical-align: text-bottom;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0;
+
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+strong{
+  font-weight: 500;
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  margin-top: 0;
+  background-image: -webkit-linear-gradient(left, $light-grey,
+  $dark-text-color, $light-grey);
+  background-image: -moz-linear-gradient(left, $light-grey, $text-color, $light-grey);
+  background-image: -ms-linear-gradient(left, $light-grey, $text-color, $light-grey);
+  background-image: -o-linear-gradient(left, $light-grey, $text-color, $light-grey); 
+}
+
+.text-center{
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.panel{
+  margin-top: 10%;
+
+  .panel-heading{
+    text-align: center;
+
+    .form-control{
+      width: inherit;
+
+    }
+  }
+}
+.panel-body{
+  margin: auto;
+  padding: 0px 0px 15px 50px;
+  .form-actions{
+    text-align: center;
+    margin-right: 80px;
+  }
+}

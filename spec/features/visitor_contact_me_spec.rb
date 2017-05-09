@@ -5,7 +5,7 @@ feature 'visit contact page' do
     visit root_path
 
     click_on 'Contato'
-    expect(page).to have_content 'Preencha com o seu email:'
+    expect(page).to have_content 'Seu email:'
     expect(page).to have_content 'Assunto'
     expect(page).to have_content 'Mensagem'
   end
@@ -17,7 +17,7 @@ feature 'visit contact page' do
 
     visit new_contact_path
 
-    fill_in 'Preencha com o seu email:', with: contact.email
+    fill_in 'Seu email:', with: contact.email
     fill_in 'Assunto', with: contact.subject
     fill_in 'Mensagem', with: contact.body
 

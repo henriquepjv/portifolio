@@ -1,0 +1,99 @@
+$text-color: rgba(66, 66, 66, 0.87);
+$dark-text-color: #353635;
+$alternate-color: #a71622;
+$light-grey: lighten($text-color, 60%);
+
+.navbar {
+  height: 100px;
+  margin-bottom: 0;
+  padding: 0;
+  background-color: #2C3E50;
+  border: 0;
+  box-shadow: 0 1px 4px $light-grey;
+
+  .navbar-brand {
+    padding: 0;
+    width: 300px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -500px;
+    background-image: url(image-path('logo2.png'));
+  }
+  .navbar-header {
+    @media(max-width:767px){
+      background-color: #fff;
+    }
+    h1{
+      margin: 0;
+      padding: 20px 10px;
+      @media (max-width: 1000px) {
+        padding: 10px;
+      }
+    }
+  }
+
+
+  .navbar-collapse {
+    background-color: #2C3E50;
+
+    ul.navbar-nav {
+      padding-top: 20px;
+
+      li {
+        margin: auto 10px;
+        &:last-child {
+          margin: auto 0 auto 10px;
+        }
+
+        a {
+          color: #6b6e80;
+          line-height: 30px;
+          margin-right: 20px;
+          padding: 0;
+
+          &:hover {
+            color: $alternate-color;
+          }
+
+          span.icon-text {
+            position: absolute;
+            padding-top: 45px;
+          }
+
+          i {
+            position: relative;
+            bottom: 10px;
+            left: 40px;
+            font-size: 200%;
+            line-height: 2.0;
+          }
+
+        }
+
+        a.user-progress {
+          width: 150px;
+
+          span {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+          }
+
+          .progress-percentage {
+            position: relative;
+            font-size: 2.0em;
+            margin-bottom: 5px;
+          }
+
+          .progress {
+            height: 10px;
+            margin: 0;
+          }
+
+        }
+
+      }
+    }
+  }
+}
