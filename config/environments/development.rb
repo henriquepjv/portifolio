@@ -34,11 +34,11 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
 
   ActionMailer::Base.smtp_settings = {
-    :user_name => 'apikey',
-    :password => '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',
-    :domain => 'sendgrid.com',
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
+    :user_name => ENV['SMTP_USER_NAME'],
+    :password => ENV['SMTP_PASSWORD'],
+    :domain => ENV['SMTP_DOMAIN'],
+    :address => ENV['SMTP_ADDRESS'],
+    :port => ENV['SMTP_PORT'],
     :authentication => :plain,
     :enable_starttls_auto => true
   }
