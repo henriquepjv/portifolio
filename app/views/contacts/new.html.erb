@@ -1,11 +1,30 @@
 <%= notice %>
 
-<%= simple_form_for @contact do |f| %>
-  <dl>
-    <dt><%= f.input :email, label: 'Preencha com o seu email:',
-      placeholder: 'meuemail@dominio.com' %></dt>
-    <dt><%= f.input :subject, label: 'Assunto:'%></dt>
-    <dt><%= f.input :body, label: 'Mensagem:'%></dt>
-    <dt><%= f.button :submit, 'Enviar' %></dt>
-  </dl>
+<div class="panel panel-default">
+  <div class="row">
+    <h2 class="panel-heading">Entre em contato!</h2>
+  </div>
+  <div class="panel-body">
+    <%= simple_form_for(@contact, html: { class: 'form-horizontal' }) do |f| %>
+      <div class="row">
+        <div class="col-xs-10 col-md-10">
+          <%= f.input :email, label: 'Seu email:',
+            placeholder: 'meuemail@dominio.com', class: "form-control" %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-md-10">
+          <%= f.input :subject, label: 'Assunto:'%>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-md-10">
+          <%= f.input :body, label: 'Mensagem:'%>
+        </div>
+      </div>
+      <div class="form-actions">
+        <%= f.button :submit, 'Enviar', class: "btn btn-primary btn-md" %>
+      </div>
+  </div>
+</div>
 <% end %>
