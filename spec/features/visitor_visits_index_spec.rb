@@ -7,4 +7,13 @@ feature 'Visitor visits index' do
 
     expect(page).to have_content 'Bem vindo'
   end
+
+  scenario 'and click on curriculum' do
+
+    visit root_path
+
+    click_on 'Sobre'
+    expect(current_path).to eq curriculums_path
+    expect(page).to have_content 'Meus dados'
+  end
 end
