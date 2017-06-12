@@ -1,0 +1,5 @@
+pt-BR:
+  unauthorized:
+    manage:
+      all: 'Ops você nào tem permissão para isso'
+
