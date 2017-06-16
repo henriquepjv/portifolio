@@ -6,6 +6,7 @@ module ApplicationHelper
   )
 
   def html_for(content)
-    safe_join [raw(FORMAT.call(content))]
+    #safe_join [raw(FORMAT.call(content))]
+    FORMAT.call(content).html_safe
   end
 end

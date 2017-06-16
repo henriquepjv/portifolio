@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :contacts, only: [:new, :create]
-  resources :posts, only: [:show]
+  resources :posts, only: [:index, :show]
 end

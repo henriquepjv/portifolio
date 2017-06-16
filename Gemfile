@@ -21,12 +21,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'cancancan', '~> 1.10'
-gem 'github-markup'
 gem 'github-markdown', '~> 0.6.9'
+gem 'github-markup'
 gem 'auto_html'
-
-
-
 
 group :development, :test do
   gem 'byebug', platform: :mri
