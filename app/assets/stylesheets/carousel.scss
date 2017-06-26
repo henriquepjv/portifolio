@@ -1,0 +1,164 @@
+#carousel-banner {
+  .carousel-inner{
+    .item {
+      background-size: cover;
+      filter: grayscale(80%);
+      height: calc(70vh - 70px);
+      width: 100vw;
+
+      .carousel-caption {
+        width: 1100px;
+        margin: 0 auto;
+        position:
+        relative;
+        top:
+        20%;
+
+        p
+        {
+          font-size:
+          30px;
+          animation-delay:
+          2s;
+
+        }
+
+        h1
+        {
+          font-size:
+          60px;
+          font-family:
+          Impact,
+          Charcoal,
+          sans-serif;
+          padding-bottom:
+          5px;
+          letter-spacing:
+          1px;
+          animation-delay:
+          1s;
+          animation-duration:
+          1s;
+
+        }
+
+        .btn
+        {
+          border:
+          solid
+          2px
+          #fff;
+          margin-top:
+          10px;
+          color:
+          #fff;
+          animation-delay:
+          2s;
+
+          &:hover
+          {
+            background-color:
+            grey;
+            color:
+            black;
+          }
+
+        }
+
+        &.caption-left
+        {
+          text-align:
+          left
+          !important;
+          right:
+          0;
+          left:
+          0;
+
+        }
+
+        &.caption-right
+        {
+          text-align:
+          right
+          !important;
+          left:
+          0;
+          right:
+          0;
+
+        }
+
+        &.caption-center
+        {
+          text-align:
+          center
+          !important;
+          left:
+          0;
+          right:
+          0;
+
+        }
+
+      }
+
+      @media (max-width: 992px) {
+        .carousel-caption {
+          width: 970px;
+          top: 10%;
+
+          h1{
+            font-size:
+            45px;
+
+          }
+
+          p {
+            font-size:
+            30px;
+
+          }
+
+          .btn {
+            padding:
+            8px
+            16px;
+
+          }
+
+        }
+
+
+      }
+
+      @media (max-width: 768px) {
+        .carousel-caption {
+          width: 90vw;
+          top: 10%;
+
+          h1 {
+            font-size:
+            35px;
+
+          }
+
+          p {
+            font-size:
+            20px;
+
+          }
+
+          .btn {
+            padding:
+            5px
+            10px;
+
+          }
+
+        }
+
+      }
+    }
+  }
+}

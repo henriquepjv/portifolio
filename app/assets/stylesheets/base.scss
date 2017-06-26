@@ -6,7 +6,7 @@ $light-grey: lighten($text-color, 60%);
 body{
   margin: 0;
   padding:0;
-  padding-top: 100px;
+  padding-top: 25px;
   font: normal 1.6em "Open Sans","Hevetica Neue","Helvetica",sans-serif;
   line-height: 2em;
   color: $text-color;
@@ -18,7 +18,7 @@ body{
 }
 
 main {
-  min-height: 80vh;
+  min-height: 50vh;
 }
 ::-moz-selection {
   color: #fff;

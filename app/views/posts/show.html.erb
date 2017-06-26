@@ -1,6 +1,20 @@
-<div class="post-overview">
-  <article>
-    <h1><%= @post.title %></h1>
-    <%= html_for(@post.body) %>
-  </article>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-lg-8">
+      <div class="post-overview">
+        <article>
+          <h1><%= @post.title %></h1>
+          <%= html_for(@post.body) %>
+        </article>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-4 col-lg-4">
+      <h3>Outros Posts:</h3>
+      <% @posts.each do |post| %>
+        <%= post.id != @post.id ? (link_to post.title, post_path(post)) : "" %>
+        <br>
+      <% end %>
+    </div>
+  </div>
 </div>
+

@@ -5,6 +5,8 @@ feature 'Visitor visits index' do
 
     visit root_path
 
-    expect(page).to have_content 'Bem vindo'
+    expect(page).to have_content 'Blog'
+    expect(page).to have_content 'Sobre'
+    expect(page).to have_content 'Contato'
   end
 end

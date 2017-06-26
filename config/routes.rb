@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   root 'home#index'
 
-  resources :contacts, only: [:new, :create]
+  resources :contacts, only: [:new, :create] do
+    collection do
+      get 'about'
+    end
+  end
   resources :posts, only: [:index, :show]
 end
