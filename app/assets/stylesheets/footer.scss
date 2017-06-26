@@ -24,10 +24,10 @@ footer {
   }
 
   .perfil-photo {
-      height: calc(20vh);
-      width: 10vw;
-      border: 1px solid #ddd;
-      border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
   }
 }
 

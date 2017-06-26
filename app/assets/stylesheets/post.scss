@@ -12,6 +12,14 @@ article {
   line-height: 1.8;
   border-radius: 10px;
 
+  img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+  }
   div#actions {
     padding: 50px 0;
   }
