@@ -5,6 +5,7 @@
         <article>
           <h1><%= @post.title %></h1>
           <%= html_for(@post.body) %>
+          <p><b>Criado em - <%= l @post.created_at, format: :long  %></b></p>
         </article>
       </div>
     </div>

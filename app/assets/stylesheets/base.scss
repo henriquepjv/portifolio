@@ -128,3 +128,17 @@ hr{
     text-align: center;
   }
 }
+contact-overview {
+  padding: 20px 50px;
+  margin: 20px 0;
+  border: solid 3px #EEF2F3;
+  border-radius: 10px;
+
+  content {
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 0.8em;
+    line-height: 1.8;
+    border-radius: 10px;
+  }
+}

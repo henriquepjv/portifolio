@@ -2,32 +2,34 @@
 <div class="container">
   <div class="panel panel-default">
     <div class="col-xs-12 col-md-12 col-lg-12">
-      <h2 class="panel-heading">Entre em contato!</h2>
-      <div class="panel-body">
-        <%= simple_form_for(@contact, html: { class: 'form-horizontal' }) do |f| %>
-          <div class="row">
+      <div class="row">
+        <h2 class="panel-heading">Entre em contato!</h2>
+        <div class="panel-body">
+          <%= simple_form_for(@contact, html: { class: 'form-horizontal' }) do |f| %>
             <div class="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
-              <%= f.input :email, label: 'Seu email:',
-                placeholder: 'meuemail@dominio.com', class: "form-control" %>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
-              <%= f.input :subject, label: 'Assunto:'%>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
-              <%= f.input :body, label: 'Mensagem:'%>
-            </div>
-          </div>
-          <div class="form-actions">
-            <div class="row">
-              <div class="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
-                <%= f.button :submit, 'Enviar', class: "btn btn-primary btn-md" %>
+              <div class="row">
+                <%= f.input :email, label: 'Seu email:',
+                  placeholder: 'meuemail@dominio.com', class: "form-control" %>
               </div>
             </div>
-          </div>
+            <div class="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
+              <div class="row">
+                <%= f.input :subject, label: 'Assunto:'%>
+              </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
+              <div class="row">
+                <%= f.input :body, label: 'Mensagem:'%>
+              </div>
+            </div>
+            <div class="form-actions">
+              <div class="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
+                <div class="row">
+                  <%= f.button :submit, 'Enviar', class: "btn btn-primary btn-md" %>
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   </div>

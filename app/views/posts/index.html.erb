@@ -1,12 +1,18 @@
-<div class="panel panel-default">
-  <% @posts.each do |post| %>
-    <div class="panel-heading">
-      <%= link_to post.title, post_path(post)  %>
-    </div>
-    <div class="panel-body">
-      <div class="text-center">
-        <%= post.description %>
+<div class="container">
+  <div class="col-xs-12 col-md-12 col-lg-12">
+    <div class="row">
+      <div class="panel panel-default">
+        <% @posts.each do |post| %>
+          <div class="panel-heading">
+            <h3><%= link_to post.title, post_path(post), class: "btn-post" %></h3>
+          </div>
+          <div class="panel-body">
+            <div class="text-center">
+              <%= post.description %>
+            </div>
+          </div>
+        <% end %>
       </div>
     </div>
-  <% end %>
+  </div>
 </div>
