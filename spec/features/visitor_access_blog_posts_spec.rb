@@ -26,5 +26,20 @@ feature 'Visitor visits blog page' do
 
     expect(page).to have_content post1.title
     expect(page).to have_content post1.body
+    expect(page).to have_content 'Outros Posts:'
+  end
+
+  scenario 'click on other posts' do
+
+    create(:post)
+    post2 = create(:post, title: 'Post 2', description: 'simple description')
+
+    visit post_path(1)
+
+    click_on post2.title
+
+    expect(page).to have_content post2.title
+    expect(page).to have_content post2.body
+    expect(page).to have_content 'Outros Posts:'
   end
 end
