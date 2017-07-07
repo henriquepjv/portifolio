@@ -8,10 +8,4 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @posts = Post.ordered_by_id
   end
-
-  private
-
-  def post_params
-    params.require(:post).permit(:title, :description, :body)
-  end
 end

@@ -32,6 +32,7 @@ group :development, :test do
   gem 'simplecov'
   gem "factory_girl_rails", "~> 4.0"
   gem 'sqlite3'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development do
