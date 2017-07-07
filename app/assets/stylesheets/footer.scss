@@ -4,7 +4,7 @@ footer {
   padding-top: 20px;
 
   .social-media {
-    padding-top: 50px;
+    padding-top: 30px;
     a {
       color: #fff;
       margin-left: 10px;
@@ -14,7 +14,13 @@ footer {
         color: #a71622;
       }
     }
+
     h3 {
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      margin-top: 0px;
       margin-bottom: 20px;
     }
   }
@@ -24,12 +30,10 @@ footer {
   }
 
   .perfil-photo {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border: 1px solid #ddd;
     border-radius: 4px;
+    margin-top: 10px;
   }
 }
-
-
-

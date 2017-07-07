@@ -4,7 +4,7 @@
       <div class="panel panel-default">
         <% @posts.each do |post| %>
           <div class="panel-heading">
-            <h3><%= link_to post.title, post_path(post), class: "btn-post" %></h3>
+            <h2><%= link_to post.title, post_path(post), class: "btn-post" %></h2>
           </div>
           <div class="panel-body">
             <div class="text-center">
