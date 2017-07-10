@@ -5,7 +5,9 @@
         <article>
           <h1><%= @post.title %></h1>
           <%= html_for(@post.body) %>
+          <br>
           <p><b>Criado em - <%= l @post.created_at, format: :long  %></b></p>
+          <br><br>
           <%= render 'shared/disqus' %>
         </article>
       </div>
