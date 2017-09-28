@@ -3,5 +3,6 @@ FactoryGirl.define do
     title "Title 1"
     description "description about blog post"
     body "This is a blog body content"
+    published true
   end
 end
