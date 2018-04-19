@@ -3,7 +3,7 @@
 
 var disqus_config = function () {
   this.shortname = 'portifolio-coments';
-  this.page.url = '<%= url_for([@post]) %>';
+  this.page.url = '<%= url_for(host: 'henriquepanham.herokuapp.com') %>';
   this.page.identifier = '<%= @post.id %>';
   this.page.title = '<%= @post.title %>';
 };

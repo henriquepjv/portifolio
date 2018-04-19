@@ -8,37 +8,40 @@
 #
 
 Contact.create(subject: 'Assunto 1',
-                         body: 'corpo email',
-                         email: 'usuario@gmail.com')
+               body: 'corpo email',
+               email: 'usuario@gmail.com')
 
 Contact.create(subject: 'Assunto 2',
-                               body: 'corpo email',
-                               email: 'usuario@gmail.com')
+               body: 'corpo email',
+               email: 'usuario@gmail.com')
 
 Post.create(title: 'titulo post 1',
-                   description: 'descriçao',
-                   body:'corpo do post')
+            description: 'descriçao',
+            body:'corpo do post',
+            published: true)
 
 Post.create(title: 'titulo post 2',
-           description: 'descriçao',
-           body:'corpo do post')
+            description: 'descriçao',
+            body:'corpo do post',
+            published: true)
 
 Post.create(title: 'titulo post 3',
-           description: 'descriçao',
-           body:'corpo do post')
+            description: 'descriçao',
+            body:'corpo do post',
+            published: true)
 
 User.create(email: 'henriquepjv@hotmail.com',
-           password: '123456',
-                   name: 'Henrique',
-                   city: 'sp',
-                   phone: '2345-6789',
-                   role: 'admin')
+            password: '123456',
+            name: 'Henrique',
+            city: 'sp',
+            phone: '2345-6789',
+            role: 'admin')
 
 User.create(email: 'user@hotmail.com',
-                   password: '123456',
-                   name: 'Banana',
-                   city: 'sp',
-                   phone: '2345-6789',
-                   role: 'user')
+            password: '123456',
+            name: 'Banana',
+            city: 'sp',
+            phone: '2345-6789',
+            role: 'user')
 
 p "Created  Contacts:#{Contact.count}, Posts:#{Post.count}, Usuários:#{User.count}"
