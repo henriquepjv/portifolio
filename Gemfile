@@ -24,6 +24,7 @@ gem 'cancancan', '~> 1.10'
 gem 'github-markdown', '~> 0.6.9'
 gem 'github-markup'
 gem 'auto_html'
+gem 'sentry-raven'
 
 group :development, :test do
   gem 'byebug', platform: :mri
