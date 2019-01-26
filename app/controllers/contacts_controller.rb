@@ -5,11 +5,10 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    if @contact.save
+    if @contact.valid?
       FormMailer.contact_msg(@contact.email, @contact.subject, @contact.body).deliver_now
       redirect_to root_path
     else
-      flash[:notice] = 'Preencha todos os campos'
       render :new
     end
   end
